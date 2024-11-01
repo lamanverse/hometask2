@@ -1,0 +1,148 @@
+<html>
+    <head>
+    <title>Responsive Design</title>
+    <link rel="stylesheet" type="text/css" href="pagee.css">
+    <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+    
+    </head>
+    <style>
+        [23:51, 01/11/2024] Aygün🤍: *{
+    box-sizing: border-box;
+}
+[class^="col-"]{
+    float: left;
+}
+
+.row{
+    clear: both;
+    display: able;
+}
+.mobile-menu{
+    visibility: visible;
+}
+.mobile-menu span{font-weight: bold;}
+.web-menu{
+    background-color: gray;
+    visibility: hidden;
+}
+.web-menu ul li{
+    display: inline-block;
+    color: white;
+}
+.col-sm-1{width: 10%;}
+.col-sm-2{width: 20%;}
+.col-sm-3{width: 30%;}
+.col-sm-4{width: 40%;}
+.col-sm-5{width: 50%;}
+.col-sm-6{width: 60%;}
+.col-sm-7{width: 70%;}
+.col-sm-8{width: 80%;}
+.col-sm-9{width: 90%;}
+.col-sm-10{width: 100%;}
+
+@media only screen and (min-width: 600px) {
+    .web-menu{visibility: visible;}
+    .mobile-menu{
+        visibility: hidden;
+    }
+    .col-md-1{width: 10%;}
+    .col-md-2{width: 20%;}
+    .col-md-3{width: 30%;}
+…
+[23:51, 01/11/2024] Aygün🤍: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - GRID</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <div class="container">
+        <div class="block-1">Header</div>
+        <div class="block-2">Left</div>
+        <div class="block-3">Content</div>
+        <div class="block-4">Right</div>
+        <div class="block-5">Footer</div>
+        <div class="block-6">Content</div>
+    </div>
+</body>
+</html>
+    </style>
+    <body>
+    <div class="row">
+        <div class="col-10">
+            <div class="web-menu">
+                <ul>
+                    <li>Menu 1</li>
+                    <li>Menu 2</li>
+                    <li>Menu 3</li>
+                    <li>Menu 4</li>
+                    <li>Menu 5</li>
+                    <li>Menu 6</li>
+                    <li>Menu 7</li>
+                </ul>
+            </div>
+            <div class="mobile-menu">
+                <span>*</span>
+            </div>
+        </div>
+        <div class="col-2 col-md-5 col-sm-10">
+            <img src="https://www.google.com/imgres?q=table&imgurl=https%3A%2F%2Fwww.sundays-company.com%2Fcdn%2Fshop%2Fproducts%2FDIN-BC-001-050_2000x_2000x_c54c21a5-a37b-4900-8cea-e5d2e56978aa.jpg%3Fv%3D1719001790%26width%3D4000&imgrefurl=https%3A%2F%2Fwww.sundays-company.com%2Fproducts%2Ffield-dining-table-white-oak&docid=7C_pa95e_hQkDM&tbnid=rn_7jMISiY8fbM&vet=12ahUKEwiqj76z65mJAxXn_rsIHc0tDfUQM3oECBgQAA..i&w=2000&h=1125&hcb=2&ved=2ahUKEwiqj76z65mJAxXn_rsIHc0tDfUQM3oECBgQAA">
+            asdfghjklqwertyuiozxcvbnmqwertyuiopasdfghjklzxcvbnm
+        </div>
+
+        <div class="col-3">
+            <img src="https://www.google.com/imgres?q=table&imgurl=https%3A%2F%2Fwww.sundays-company.com%2Fcdn%2Fshop%2Fproducts%2FDIN-BC-001-050_2000x_2000x_c54c21a5-a37b-4900-8cea-e5d2e56978aa.jpg%3Fv%3D1719001790%26width%3D4000&imgrefurl=https%3A%2F%2Fwww.sundays-company.com%2Fproducts%2Ffield-dining-table-white-oak&docid=7C_pa95e_hQkDM&tbnid=rn_7jMISiY8fbM&vet=12ahUKEwiqj76z65mJAxXn_rsIHc0tDfUQM3oECBgQAA..i&w=2000&h=1125&hcb=2&ved=2ahUKEwiqj76z65mJAxXn_rsIHc0tDfUQM3oECBgQAA">
+        </div>
+    </div>
+    
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - GRID</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<style>
+    .container {
+    border: 1px solid gray;
+    display: grid;
+    grid-template-columns: 120px 300px 300px 300px 120px; 
+    grid-template-rows: 80px 200px 70px ; 
+    grid-gap: 0px;
+    grid-template-areas: "a a a a a a a a"
+                         "b b l l l l d d"
+                         "b b c c c c d d"
+                         "b b c c c c d d"
+                         "b b c c c c d d"
+                         "b b c c c c d d"
+                         "b b c c c c d d"
+                         "e e e e e e e e";
+                       
+}
+
+.container * {
+    border: 1px solid  black;
+    background-color: white;
+
+}
+
+.block-1{grid-area: a;}
+.block-2{grid-area: b;}
+.block-3{grid-area: c;}
+.block-4{grid-area: d;}
+.block-5{grid-area: e;}
+.block-6{grid-area: l}</style>
+<body>
+    <div class="container">
+        <div class="block-1">Header</div>
+        <div class="block-2">Left</div>
+        <div class="block-3">Content</div>
+        <div class="block-4">Right</div>
+        <div class="block-5">Footer</div>
+        <div class="block-6">Content</div>
+    </div>
+</body>
+</html>
